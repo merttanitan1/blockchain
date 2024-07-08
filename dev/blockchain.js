@@ -27,11 +27,11 @@ Blockchain.prototype.getLastBlock = function(){
     return this.chain[this.chain.length - 1];
 }
 
-Blockchain.prototype.createNewTransaction = function(amount, sender, receipent) {
+Blockchain.prototype.createNewTransaction = function(amount, sender, recipient) {
     const newTransaction = {
         amount: amount,
         sender: sender,
-        receipent: receipent
+        recipient: recipient
     }
 
     this.pendingTransactions.push(newTransaction);
